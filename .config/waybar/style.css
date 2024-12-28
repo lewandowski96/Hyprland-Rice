@@ -1,0 +1,137 @@
+/*
+
+██╗    ██╗ █████╗ ██╗   ██╗██████╗  █████╗ ██████╗ 
+██║    ██║██╔══██╗╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
+██║ █╗ ██║███████║ ╚████╔╝ ██████╔╝███████║██████╔╝
+██║███╗██║██╔══██║  ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
+╚███╔███╔╝██║  ██║   ██║   ██████╔╝██║  ██║██║  ██║
+ ╚══╝╚══╝ ╚═╝  ╚═╝   ╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+
+Waybar Config File by Arfan Zubi
+
+*/
+
+@import url("./mocha.css");
+
+* {
+    font-family: "JetBrainsMono Nerd Font";
+    font-weight: bold;
+    font-size: 14px;
+    min-height: 0;
+}
+
+window#waybar {
+    color: @text;
+    background: transparent;
+    border-radius: 0.5rem;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+#workspaces,
+#workspaces button,
+#workspaces button.active,
+#workspaces button:hover {
+    border-radius: 0.5rem;
+}
+
+#workspaces {
+    margin: 5px 1rem 5px 1rem;
+    background-color: rgba(54, 58, 79, 0.5);
+    background: @mantle;
+}
+
+#workspaces button {
+    padding: 0.5rem;
+    color: @text;
+}
+
+#workspaces button.active {
+    color: @mauve;
+}
+
+#workspaces button:hover {
+    color: @lavender;
+    background: @surface1;
+    border-color: @surface0;
+}
+
+#workspaces button.urgent {
+    color: @red;
+}
+
+#network,
+#clock,
+#tray,
+#pulseaudio,
+#backlight,
+#battery,
+#language,
+#custom-lock,
+#custom-power {
+    margin: 5px 0;
+    padding: 0 1rem;
+    background-color: rgba(54, 58, 79, 0.5);
+    background: @mantle;
+}
+
+#window {
+    margin: 5px 0;
+    padding: 0.5rem 1rem;
+    color: @yellow;
+    background-color: rgba(54, 58, 79, 0.5);
+    background: @mantle;
+    border-radius: 0.5rem;
+    border: 1px solid @mantle;
+}
+
+/* make window module transparent when no windows present */
+window#waybar.empty #window {
+    background-color: transparent;
+}
+
+#clock {
+    color: @mauve;
+    border-radius: 0.5rem;
+    margin: 5px 1rem;
+}
+
+#tray {
+    color: @muave;
+    border-radius: 0.5rem;
+    margin: 5px 0;
+}
+
+#battery,
+#battery.charging {
+    color: @green;
+}
+
+#battery.warning:not(.charging) {
+    color: @red;
+}
+
+#pulseaudio {
+    margin-left: 1rem;
+    color: @maroon;
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+#backlight {
+    color: @yellow;
+}
+
+#network {
+    color: @yellow;
+    border-radius: 0.5rem;
+}
+
+#language {
+    color: @lavender;
+}
+
+#custom-power {
+    margin-right: 1rem;
+    color: @red;
+    border-radius: 0 0.5rem 0.5rem 0;
+}
