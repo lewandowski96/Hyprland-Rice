@@ -48,6 +48,8 @@ window#waybar {
 
 #workspaces button.active {
     color: @mauve;
+    border-top: 2px solid #c9545d;
+    border-radius: 0rem;
 }
 
 #workspaces button:hover {
@@ -100,6 +102,7 @@ window#waybar.empty #window {
     color: @muave;
     border-radius: 0.5rem;
     margin: 5px 0;
+    margin-left: 1rem;
 }
 
 #battery,

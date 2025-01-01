@@ -1,0 +1,25 @@
+.bash_history
+.bash_logout
+.bash_profile
+.bashrc
+.cache/
+.cargo/
+.config/Code - OSS/
+.config/chromium/
+.gitconfig
+.gnupg/
+.gtkrc-2.0
+.local/
+.mozilla/
+.npm/
+.pki/
+.ssh/
+.vscode-oss/
+.zcompdump
+.zsh/zsh-autosuggestions/
+.zsh-history
+Documents/
+Downloads/
+Pictures/
+aur/
+.zsh_history

@@ -52,25 +52,49 @@
 @define-color	crust-rgb  rgb(17, 17, 27);
 
 * {
-  font-family: 'JetBrainsMono Nerd Font', monospace;
-  font-size: 18px;
+  font-family: 'Inconsolata Nerd Font', monospace;
+  font-size: 14px;
 }
 
 /* Window */
 window {
   margin: 0px;
   padding: 10px;
-  border: 2px solid @lavender;
-  border-radius: 8px;
+  border: 0.16em solid @lavender;
+  border-radius: 0.1em;
   background-color: @base;
+  animation: slideIn 0.5s ease-in-out both;
+}
+
+/* Slide In */
+@keyframes slideIn {
+  0% {
+     opacity: 0;
+  }
+
+  100% {
+     opacity: 1;
+  }
 }
 
 /* Inner Box */
 #inner-box {
-  margin: 0 15px;
+  margin: 5px;
   padding: 10px;
   border: none;
   background-color: @base;
+  animation: fadeIn 0.5s ease-in-out both;
+}
+
+/* Fade In */
+@keyframes fadeIn {
+  0% {
+     opacity: 0;
+  }
+
+  100% {
+     opacity: 1;
+  }
 }
 
 /* Outer Box */
@@ -91,12 +115,13 @@ window {
 
 /* Input */
 #input {
-  margin: 20px 15px;
-  padding: 10px 20px;
+  margin: 5px 20px;
+  padding: 10px;
   border: none;
   border-radius: 0.1em;
   color: @text;
   background-color: @base;
+  animation: fadeIn 0.5s ease-in-out both;
 }
 
 #input image {
@@ -113,6 +138,7 @@ window {
   margin: 5px;
   border: none;
   color: @text;
+  animation: fadeIn 0.5s ease-in-out both;
 }
 
 #entry {

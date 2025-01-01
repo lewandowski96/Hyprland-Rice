@@ -21,8 +21,8 @@
         "clock"
     ],
     "modules-right": [
-	"tray",
 	"network",
+	"tray",
         "pulseaudio",
         "backlight",
         "battery",
@@ -35,7 +35,8 @@
         "on-scroll-up": "hyprctl dispatch workspace e-1",
         "on-scroll-down": "hyprctl dispatch workspace e+1",
         "format": "{icon}",
-        "all-outputs": true
+        "all-outputs": false,
+	"persistent-workspaces": [ ]
     },
     "hyprland/window": {
         "separate-outputs": true,
@@ -52,7 +53,7 @@
         "timezone": "Asia/Colombo",
         "tooltip-format": "<tt><small>{calendar}</small></tt>",
         "format-alt": " {:%d.%m.%Y}",
-        "format": "  {:%I:%M %p}"
+        "format": "  {:%I:%M %p %a}"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
