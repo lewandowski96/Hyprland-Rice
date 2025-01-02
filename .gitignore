@@ -23,3 +23,5 @@ Downloads/
 Pictures/
 aur/
 .zsh_history
+.config/pulse/*
+.config/vlc/*

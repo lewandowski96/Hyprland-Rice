@@ -3454,7 +3454,7 @@ qt-privacy-ask=0
 [freetype] # Freetype2 font renderer
 
 # Font (string)
-#freetype-font=Serif Bold
+freetype-font=Noto Sans
 
 # Monospace Font (string)
 #freetype-monofont=Monospace
@@ -3463,7 +3463,7 @@ qt-privacy-ask=0
 #freetype-fontsize=0
 
 # Relative font size (integer)
-#freetype-rel-fontsize=0
+freetype-rel-fontsize=20
 
 # Text opacity (integer)
 #freetype-opacity=255
